@@ -1,13 +1,14 @@
 <template>
     <div class="wrap">
+        <div class="topbar"></div>
+        <div class="scrollbar">
+            <span class="scroll">scroll</span>
+        </div>
         <div class="intro">
+            <div class="left"></div>
             <div class="intro-wrap">
                 <h1>Hello</h1>
                 <div class="flex">
-                    <div class="topbar"></div>
-                    <div class="scrollbar">
-                        <span class="scroll">scroll</span>
-                    </div>
                     <div class="intro-text">
                         <p>My name is Eloise and I’m a <strong>creative developer</strong> <br> inspired by <strong>the future</strong>. I’m 19 years old and study <br>in a web school called Hetic.</p>
                         <p class="check">Check out my recent work or <a href="#" class="pink">contact me.</a></p>
@@ -35,12 +36,16 @@
             </div>
         </div>
         <div class="project">
-            <div class="left">
+            <div class="left"></div>
+            <div class="center">
                 <div class="project-head">     
                     <div class="num">01</div>
                     <h2>Datajournalisme</h2>
                 </div>
-                <img src="@/assets/img/datajournalism.jpg" alt="" class="project-img">
+                <div class="project-content">
+                    <img src="@/assets/img/datajournalism.jpg" alt="" class="project-img">
+                    <div class="project-desc"></div>
+                </div>
             </div>
             <div class="right"></div>
         </div>
@@ -56,62 +61,68 @@ export default {
 <style lang="scss" scoped>
     .wrap
     {
-        width: calc(100%-10rem);
-        margin-left: 10rem;
-        padding-top: 10rem;
+        .topbar
+        {
+            width: 2rem;
+            height: 1px;
+            background-color: #e6e6e6;
+            position: absolute;
+            margin-left: .5rem;
+            top: 21vw;
+            left: 17.5vw;
+        }
+        .scrollbar
+        {
+            width: 1.5px;
+            height: 110%;
+            background-color: #e6e6e6;
+            position: absolute;
+            z-index: -1;
+            top: 21vw;
+            left: 19.35vw;
 
+            .scroll
+            {
+                text-transform: uppercase;
+                position: inherit;
+                transform: rotate(-90deg);    
+                top: 18%;
+                left: -3rem;
+                background-color: white;
+                color: #cfcfcf;
+                padding: 1rem;
+            }
+        }
         .intro
         {
             display: flex;
-            border-left: 1px solid rgba(0, 0, 0, 0.151);
-            height: 100%;
+            height: 100%;   
+            padding-top: 10vw;
+
+            .left
+            {
+                width: 10vw;
+            }
 
             .intro-wrap
             {
-                width: calc(100% - 15rem);
-                padding: 5rem 0 0 5rem;
                 border-right: 1px solid rgba(0, 0, 0, 0.151);
+                border-left: 1px solid rgba(0, 0, 0, 0.151);
+                width: 80vw;
                 h1
                 {
                     font-size: 3rem;
                     color: #4A4A4A;
+                    padding: 5vw 0 0 8vw;
                 }  
                 .flex
                 {
                     margin-top: 1rem;
                     display: flex;
-                    .topbar
-                    {
-                        width: 1rem;
-                        height: 1px;
-                        background-color: #e6e6e6;
-                        position: absolute;
-                        margin-left: .5rem;
-                    }
-                    .scrollbar
-                    {
-                        width: 1.5px;
-                        height: 100%;
-                        background-color: #e6e6e6;
-                        margin-left: 1rem;
-                        position: absolute;
-                        z-index: -1;
-
-                        .scroll
-                        {
-                            text-transform: uppercase;
-                            position: inherit;
-                            transform: rotate(-90deg);    
-                            top: 18%;
-                            left: -3rem;
-                            background-color: white;
-                            color: #cfcfcf;
-                            padding: 1rem;
-                        }
-                    }
+                   
                     .intro-text
                     {
-                        padding: 1.5rem 4rem;     
+                        padding: 5vw 15vw; 
                         p
                         {
                             line-height: 180%;
@@ -138,43 +149,74 @@ export default {
             }
             .links
             { 
-                width: 10rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
+                width: 10vw;
             }
         }
         .project
         {
             display: flex;
-            border-left: 1px solid rgba(0, 0, 0, 0.151);
+            border-top: 1px solid rgba(0, 0, 0, 0.151);
 
             .left
+            {
+                width: 10vw;
+                border-right: 1px solid rgba(0, 0, 0, 0.151);
+            }
+            .center
             {      
-                padding-top: 10rem;
+                padding-top: 5rem;
                 display: flex;  
                 flex-direction: column;
-                width: calc(100% - 10rem);
                 border-right: 1px solid rgba(0, 0, 0, 0.151);
+                width: 80vw;
 
-                &-head
+                .project-head
                 {
                     display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    margin: 0 10vw 0 3vw;
+
+                    h2
+                    {
+                        text-transform: uppercase;
+                        font-weight:500;
+                        font-size: 2rem;
+                        color: #FFB03A;
+                    }
+
+                    .num
+                    {    
+                        font-family: 'Suranna', serif;
+                        font-size: 4rem;
+                        color: #e6e6e6;
+                    }
                 }
 
-                img
+                .project-content
                 {
-                    width: 22rem;
-                    position: relative;
-                    z-index: 5;
+                    display: flex;
+                    margin: 0 10rem;
+
+                    img
+                    {
+                        width: 32vw;
+                        position: relative;
+                        z-index: 5;
+                        transform: translateX(-5vw)
+                    }
                 }
             }
             .right
             {       
                 padding-top: 10rem;
                 height: 100%;
-                width: 10rem;
+                width: 10vw;
             }
         }
     }

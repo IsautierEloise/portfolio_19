@@ -37,8 +37,8 @@ export default {
 
         .logo
         {
-            width: 10rem;
-            height: 10rem;
+            width: 10vw;
+            height: 10vw;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -48,7 +48,7 @@ export default {
         .menu
         {
             
-            width: calc(100% - 20rem);
+            width: 80vw;
             font-size: 1.1rem;
             border-right: 1px solid rgba(0, 0, 0, 0.151);
             border-left: 1px solid rgba(0, 0, 0, 0.151);
@@ -72,8 +72,8 @@ export default {
 
         .right-case 
         {
-            height: 10rem;
-            width: 10rem;
+            height: 10vw;
+            width: 10vw;
         }   
     }
 
