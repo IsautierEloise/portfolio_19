@@ -27,35 +27,44 @@ export default {
         border-bottom: 1px solid rgba(0, 0, 0, 0.151);
         display: flex;
         justify-content: space-between;
-    }
-    .logo
-    {
-        border-right: 1px solid rgba(0, 0, 0, 0.151);
-        width: 10rem;
-        height: 10rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Suranna', serif;
-    }
-    .menu
-    {
-        display: flex;
-        width: 50%;
-        transform: translateX(9.8rem);
-        justify-content: space-evenly;
-        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background-color: white;
+        
 
-        a
+        .logo
         {
-            text-decoration: none;
-            color: #4A4A4A;
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Suranna', serif;
         }
+
+        .menu
+        {
+            display: flex;
+            width: calc(100% - 20rem);
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 1.1rem;
+            border-right: 1px solid rgba(0, 0, 0, 0.151);
+            border-left: 1px solid rgba(0, 0, 0, 0.151);
+
+            a
+            {
+                text-decoration: none;
+                color: #4A4A4A;
+            }
+        }
+
+        .right-case 
+        {
+            height: 10rem;
+            width: 10rem;
+        }   
     }
-    .right-case 
-    {
-        height: 10rem;
-        width: 10rem;
-        border-left: 1px solid rgba(0, 0, 0, 0.151);
-    }
+
 </style>
