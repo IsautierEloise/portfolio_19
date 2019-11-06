@@ -34,6 +34,16 @@
                 </a>
             </div>
         </div>
+        <div class="project">
+            <div class="left">
+                <div class="project-head">     
+                    <div class="num">01</div>
+                    <h2>Datajournalisme</h2>
+                </div>
+                <img src="@/assets/img/datajournalism.jpg" alt="" class="project-img">
+            </div>
+            <div class="right"></div>
+        </div>
     </div>
 </template>
 
@@ -53,8 +63,8 @@ export default {
         .intro
         {
             display: flex;
-            height: calc(100vh - 10rem);
             border-left: 1px solid rgba(0, 0, 0, 0.151);
+            height: 100%;
 
             .intro-wrap
             {
@@ -85,6 +95,7 @@ export default {
                         background-color: #e6e6e6;
                         margin-left: 1rem;
                         position: absolute;
+                        z-index: -1;
 
                         .scroll
                         {
@@ -109,19 +120,19 @@ export default {
                             font-weight: 300;
                         }
                         .check
+                        {
+                            margin-top: 1rem;
+                            .pink
                             {
-                                margin-top: 1rem;
-                                .pink
-                                {
-                                    color: #F8A6C8;
-                                    text-decoration: none;
+                                color: #F8A6C8;
+                                text-decoration: none;
 
-                                    &:hover
-                                    {
-                                        color: #dd84a9
-                                    }
+                                &:hover
+                                {
+                                    color: #dd84a9
                                 }
                             }
+                        }
                     }
                 }
             }
@@ -132,6 +143,38 @@ export default {
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
+            }
+        }
+        .project
+        {
+            display: flex;
+            height: calc(100vh - 10rem);
+            border-left: 1px solid rgba(0, 0, 0, 0.151);
+            padding-top: 10rem;
+
+            .left
+            {      
+                display: flex;  
+                flex-direction: column;
+                width: calc(100% - 10rem);
+                border-right: 1px solid rgba(0, 0, 0, 0.151);
+                &-head
+                {
+                    display: flex;
+                }
+
+                img
+                {
+                    width: 22rem;
+                    position: relative;
+                    z-index: 5;
+                }
+            }
+            .right
+            {
+                height: 100%;
+                width: 10rem;
+                border-left:  1px solid rgba(0, 0, 0, 0.151);
             }
         }
     }

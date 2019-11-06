@@ -7,9 +7,9 @@
         </div>
         <div class="menu">
             <div class="links">
-                <a href="">My work /></a>
-                <a href="">About /></a>
-                <a href="">Contact /></a>
+                <a href="">My work <small>/></small></a>
+                <a href="">About <small>/></small></a>
+                <a href="">Contact <small>/></small></a>
             </div>
         </div>
         <div class="right-case"></div>
