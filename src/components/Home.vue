@@ -148,16 +148,16 @@ export default {
         .project
         {
             display: flex;
-            height: calc(100vh - 10rem);
             border-left: 1px solid rgba(0, 0, 0, 0.151);
-            padding-top: 10rem;
 
             .left
             {      
+                padding-top: 10rem;
                 display: flex;  
                 flex-direction: column;
                 width: calc(100% - 10rem);
                 border-right: 1px solid rgba(0, 0, 0, 0.151);
+
                 &-head
                 {
                     display: flex;
@@ -171,10 +171,10 @@ export default {
                 }
             }
             .right
-            {
+            {       
+                padding-top: 10rem;
                 height: 100%;
                 width: 10rem;
-                border-left:  1px solid rgba(0, 0, 0, 0.151);
             }
         }
     }
