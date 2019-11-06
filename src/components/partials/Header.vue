@@ -21,6 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
+
     .header
     {
         border-bottom: 1px solid rgba(0, 0, 0, 0.151);
@@ -48,7 +49,7 @@ export default {
         a
         {
             text-decoration: none;
-            color: $grey
+            color: #4A4A4A;
         }
     }
     .right-case 
