@@ -42,7 +42,7 @@ export default {
         display: flex;
         width: 50%;
         transform: translateX(9.8rem);
-        justify-items: space-evenly;
+        justify-content: space-evenly;
     }
     .right-case 
     {
