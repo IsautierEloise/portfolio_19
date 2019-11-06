@@ -19,10 +19,10 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Suranna&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,700|Suranna&display=swap');
 
 #app {
-  font-family: 'Oxygen', sans-serif, 'Suranna', serif;
+  font-family: 'Heebo', sans-serif, 'Suranna', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

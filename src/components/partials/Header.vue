@@ -6,9 +6,11 @@
             </svg>
         </div>
         <div class="menu">
-            <a href="">My work /></a>
-            <a href="">About /></a>
-            <a href="">Contact /></a>
+            <div class="links">
+                <a href="">My work /></a>
+                <a href="">About /></a>
+                <a href="">Contact /></a>
+            </div>
         </div>
         <div class="right-case"></div>
     </div>
@@ -45,18 +47,26 @@ export default {
 
         .menu
         {
-            display: flex;
+            
             width: calc(100% - 20rem);
-            justify-content: space-evenly;
-            align-items: center;
             font-size: 1.1rem;
             border-right: 1px solid rgba(0, 0, 0, 0.151);
             border-left: 1px solid rgba(0, 0, 0, 0.151);
 
-            a
+            .links
             {
-                text-decoration: none;
-                color: #4A4A4A;
+                height: 100%;
+                width: 50%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                float: right;
+                margin: 0 3rem;
+                a
+                {
+                    text-decoration: none;
+                    color: #4A4A4A;
+                }
             }
         }
 
