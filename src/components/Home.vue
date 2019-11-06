@@ -10,7 +10,7 @@
                 <h1>Hello</h1>
                 <div class="flex">
                     <div class="intro-text">
-                        <p>My name is Eloise and I’m a <strong>creative developer</strong> <br> inspired by <strong>the future</strong>. I’m 19 years old and study <br>in a web school called Hetic.</p>
+                        <p>My name is Eloise and I’m a <strong>creative developer</strong> <br> inspired by <strong>the future</strong>. I’m 19 years old and am studying web development, design and marketing<br> at HETIC Paris.</p>
                         <p class="check">Check out my recent work or <a href="#" class="pink">contact me.</a></p>
                     </div>
                 </div>
@@ -118,6 +118,7 @@ export default {
                 .flex
                 {
                     margin-top: 1rem;
+                    padding-bottom: 5vw;
                     display: flex;
                    
                     .intro-text
