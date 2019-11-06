@@ -6,9 +6,9 @@
             </svg>
         </div>
         <div class="menu">
-            <a href="">pij</a>
-            <a href="">pij</a>
-            <a href="">pij</a>
+            <a href="">My work /></a>
+            <a href="">About /></a>
+            <a href="">Contact /></a>
         </div>
         <div class="right-case"></div>
     </div>
@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
     .header
     {
         border-bottom: 1px solid rgba(0, 0, 0, 0.151);
@@ -43,6 +43,13 @@ export default {
         width: 50%;
         transform: translateX(9.8rem);
         justify-content: space-evenly;
+        align-items: center;
+
+        a
+        {
+            text-decoration: none;
+            color: $grey
+        }
     }
     .right-case 
     {
