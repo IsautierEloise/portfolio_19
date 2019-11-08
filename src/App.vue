@@ -19,10 +19,10 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,700|Suranna&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600|Suranna&display=swap');
 
 #app {
-  font-family: 'Heebo', sans-serif, 'Suranna', serif;
+  font-family: 'Raleway', sans-serif, 'Suranna', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

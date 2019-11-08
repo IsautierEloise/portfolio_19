@@ -43,15 +43,14 @@ export default {
             align-items: center;
             justify-content: center;
             font-family: 'Suranna', serif;
+            border-right: 1px solid rgba(0, 0, 0, 0.151);
         }
 
         .menu
         {
             
-            width: 80vw;
+            width: 86vw;
             font-size: 1.1rem;
-            border-right: 1px solid rgba(0, 0, 0, 0.151);
-            border-left: 1px solid rgba(0, 0, 0, 0.151);
 
             .links
             {
@@ -61,7 +60,7 @@ export default {
                 justify-content: space-evenly;
                 align-items: center;
                 float: right;
-                margin: 0 3rem;
+                padding: 0 3rem;
                 a
                 {
                     text-decoration: none;
@@ -74,6 +73,7 @@ export default {
         {
             height: 10vw;
             width: 10vw;
+            border-left: 1px solid rgba(0, 0, 0, 0.151);
         }   
     }
 

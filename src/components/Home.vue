@@ -40,11 +40,23 @@
             <div class="center">
                 <div class="project-head">     
                     <div class="num">01</div>
-                    <h2>Datajournalisme</h2>
+                    <div class="flex">
+                        <h2>Datajournalisme</h2>
+                        <div class="project-content">
+                            <div class="project-left"></div>
+                            <p><span class="project-grey">YEAR</span> > 2019 </p>
+                            <p><span class="project-grey">ROLE</span> > Illustrator</p>
+                            <p class="project-desc">
+                                Illustrations réalisées sur Adobe Illustrator dans le cadre d'un projet de datajournalisme sur les maladies chroniques. <br>
+                                <a href="https://www.behance.net/gallery/87377367/Illustrer-des-maladies-chroniques" class="discover">Discover</a> <br>
+                            </p>
+                            
+                            <div class="project-arrow"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-content">
+                <div class="project-img">
                     <img src="@/assets/img/datajournalism.jpg" alt="" class="project-img">
-                    <div class="project-desc"></div>
                 </div>
             </div>
             <div class="right"></div>
@@ -61,6 +73,7 @@ export default {
 <style lang="scss" scoped>
     .wrap
     {
+        overflow-x: hidden;
         .topbar
         {
             width: 2rem;
@@ -98,16 +111,16 @@ export default {
             display: flex;
             height: 100%;   
             padding-top: 10vw;
+            width: 100%;
 
             .left
             {
                 width: 10vw;
+                border-right: 1px solid rgba(0, 0, 0, 0.151);
             }
 
             .intro-wrap
             {
-                border-right: 1px solid rgba(0, 0, 0, 0.151);
-                border-left: 1px solid rgba(0, 0, 0, 0.151);
                 width: 80vw;
                 h1
                 {
@@ -119,7 +132,8 @@ export default {
                 {
                     margin-top: 1rem;
                     padding-bottom: 5vw;
-                    display: flex;
+                    display: flex;    
+                    width: 80vw;
                    
                     .intro-text
                     {
@@ -154,13 +168,15 @@ export default {
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
-                width: 10vw;
+                width: 10vw;     
+                border-left: 1px solid rgba(0, 0, 0, 0.151);
             }
         }
         .project
         {
             display: flex;
             border-top: 1px solid rgba(0, 0, 0, 0.151);
+            width: 100%;
 
             .left
             {
@@ -172,7 +188,6 @@ export default {
                 padding-top: 5rem;
                 display: flex;  
                 flex-direction: column;
-                border-right: 1px solid rgba(0, 0, 0, 0.151);
                 width: 80vw;
 
                 .project-head
@@ -182,6 +197,7 @@ export default {
                     justify-content: space-between;
                     align-items: baseline;
                     margin: 0 10vw 0 3vw;
+                    position: relative;
 
                     h2
                     {
@@ -197,11 +213,57 @@ export default {
                         font-size: 4rem;
                         color: #e6e6e6;
                     }
+
+                    .project-content
+                    {
+                        position: absolute;
+                        margin-top: 10vh;
+                        p
+                        {
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                            line-height: 2rem;
+                            margin: 0 3vw;
+                            .project-grey
+                            {
+                                font-weight: 700;
+                                color: #CCCCCC;
+                            }
+                        }
+                        .project-left
+                        {
+                            width: 1px;
+                            height: 100%;
+                            background-color: red;
+                            position: absolute
+                        }
+                        .project-arrow
+                        {
+                            width: 100%;
+                            height: 1px;
+                            background-color: red;
+                            position: absolute;
+                        }
+                        .project-desc
+                        {
+                            width: 24vw;
+                            margin-bottom: 3vw;
+                            margin-top: 1vw;
+                            a
+                            {
+                                margin-top: 3vw;
+                                text-decoration: none;
+                                color: #383838;
+                                font-weight: 600;
+                                font-size: 1.2rem;
+                                text-transform: uppercase
+                            }
+                        }
+                    }
                 }
 
-                .project-content
+                .project-img
                 {
-                    display: flex;
                     margin: 0 10rem;
 
                     img
@@ -209,15 +271,14 @@ export default {
                         width: 32vw;
                         position: relative;
                         z-index: 5;
-                        transform: translateX(-5vw)
+                        transform: translateX(-15vw)
                     }
                 }
             }
             .right
             {       
-                padding-top: 10rem;
-                height: 100%;
                 width: 10vw;
+                border-left: 1px solid rgba(0, 0, 0, 0.151);
             }
         }
     }
