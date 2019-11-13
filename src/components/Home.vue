@@ -35,13 +35,13 @@
                 </a>
             </div>
         </div>
-        <div class="project">
+        <div class="project"  :key="project.data" v-for="project in this.$store.state.projects">
             <div class="left"></div>
             <div class="center">
                 <div class="project-head">     
-                    <div class="num">01</div>
+                    <div class="num">{{ project.num }}</div>
                     <div class="flex">
-                        <h2>Datajournalisme</h2>
+                        <h2>{{ project.name }}</h2>
                         <p class="project-infos"><span class="project-grey">YEAR</span> > 2019 </p>
                         <p class="project-infos"><span class="project-grey">ROLE</span> > Illustrator</p>
                         <div class="project-content">
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="project-img">
-                    <img src="@/assets/img/datajournalism.jpg" alt="" class="project-img">
+                    <img :src="project.img" alt="" class="project-img">
                 </div>
             </div>
             <div class="right"></div>
@@ -67,7 +67,12 @@
 
 <script>
 export default {
-    
+    mounted() {
+
+    },
+    computed: {
+        
+    }
 }
 </script>
 

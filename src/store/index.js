@@ -6,15 +6,15 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     projects : {
-      'project' : {
+      datajournalism : {
         'num' : '01',
         'name' : 'datajournalisme',
-        'img' : '@/assets/img/datajournalism.jpg',
+        'img' : require('@/assets/img/datajournalism.jpg'),
       },
-      'project' : {
+      kickstarter : {
         'num' : '02',
         'name' : 'kickstarter',
-        'img' : '@/assets/img/kickstarter.jpg',
+        'img' : require('@/assets/img/kickstarter.jpg'),
       }
     }
   },
