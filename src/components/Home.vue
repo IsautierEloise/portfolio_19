@@ -316,7 +316,7 @@ export default {
                         width: 32vw;
                         height: 24vw;
                         z-index: 8;
-                        margin-left: 10vw;
+                        margin-left: 13vw;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -326,7 +326,7 @@ export default {
                         &:hover
                         {      
                             background-color: #000000b2;
-                            color: #ffffff;
+                            color: #ffffffd0;
                         }
 
                         span
@@ -342,7 +342,7 @@ export default {
                         width: 32vw;
                         height: 24vw;
                         z-index: 5;
-                        margin-left: 10vw;
+                        margin-left: 13vw;
                     }
                 }
             }
