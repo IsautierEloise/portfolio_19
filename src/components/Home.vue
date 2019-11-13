@@ -1,7 +1,7 @@
 <template>
     <div class="wrap">
         <div class="topbar"></div>
-        <div class="scrollbar" :style="{ height: windowHeight }">
+        <div class="scrollbar" :style="{ height: (windowHeight + 'px') }">
             <span class="scroll">scroll</span>
         </div>
         <div class="intro">
@@ -81,7 +81,7 @@ export default {
     {
         getHeight()
         {
-            this.windowHeight = document.documentElement.scrollHeight;
+            this.windowHeight = document.documentElement.scrollHeight - (0.06 * document.documentElement.clientWidth);
         }
         
     },
