@@ -8,7 +8,7 @@
             <div class="left"></div>
             <div class="intro-wrap">
                 <h1>Hello</h1>
-                <div class="flex">
+                <div class="intro-flex">
                     <div class="intro-text">
                         <p>My name is Eloïse and I’m a <strong>creative developer</strong> <br> inspired by <strong>the future</strong>. I’m 19 years old and am studying web development, design and marketing<br> at HETIC Paris.</p>
                         <p class="check">Check out my recent work or <a href="#" class="pink">contact me.</a></p>
@@ -40,16 +40,16 @@
             <div class="center">
                 <div class="project-head">     
                     <div class="num">{{ project.num }}</div>
-                    <div class="flex">
+                    <div class="project-flex">
                         <h2>{{ project.name }}</h2>
-                        <p class="project-infos"><span class="project-grey">YEAR</span> > 2019 </p>
-                        <p class="project-infos"><span class="project-grey">ROLE</span> > Illustrator</p>
+                        <p class="project-infos"><span class="project-grey">YEAR</span> > {{ project.year }} </p>
+                        <p class="project-infos"><span class="project-grey">ROLE</span> > {{ project.role }}</p>
                         <div class="project-content">
                             <div class="project-left"></div>
-                            <p class="project-desc">
-                                Illustrations réalisées sur Adobe Illustrator dans le cadre d'un projet de datajournalisme sur les maladies chroniques. <br><br>
-                                <a href="https://www.behance.net/gallery/87377367/Illustrer-des-maladies-chroniques" class="discover">Discover</a> <br>
-                            </p>
+                            <div class="project-desc">
+                                <p v-html="project.desc"></p>
+                                <a :href="project.discover" class="discover">Discover</a> <br>
+                            </div>
                             <div class="arrow-flex">
                                 <div class="arrow-head">▶</div>
                             </div>
@@ -134,7 +134,8 @@ export default {
                     color: #4A4A4A;
                     padding: 5vw 0 0 8vw;
                 }  
-                .flex
+
+                .intro-flex
                 {
                     margin-top: 1rem;
                     padding-bottom: 5vw;
@@ -184,6 +185,8 @@ export default {
             border-top: 1px solid rgba(0, 0, 0, 0.151);
             width: 100%;
 
+     
+
             .left
             {
                 width: 10vw;
@@ -196,6 +199,7 @@ export default {
                 flex-direction: column;
                 width: 80vw;
                 margin-bottom: 5vw;
+                position: relative;
 
                 .project-head
                 {
@@ -203,8 +207,7 @@ export default {
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: baseline;
-                    margin: 0 10vw 0 3vw;
-                    position: relative;
+                    margin: 0 3vw;
 
                     h2
                     {
@@ -214,6 +217,11 @@ export default {
                         color: #FFB03A;
                     }
 
+                    .project-flex
+                    {
+                        position: absolute;
+                        left: 48vw;
+                    }
                     .num
                     {    
                         font-family: 'Suranna', serif;
