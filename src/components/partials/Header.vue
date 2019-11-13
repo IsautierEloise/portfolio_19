@@ -30,7 +30,7 @@ export default {
         display: flex;
         justify-content: space-between;
         position: fixed;
-        width: 100%;
+        width: calc(100vw - (100vw - 100%));
         z-index: 10;
         background-color: white;
         

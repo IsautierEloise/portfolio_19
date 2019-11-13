@@ -10,7 +10,7 @@
                 <h1>Hello</h1>
                 <div class="flex">
                     <div class="intro-text">
-                        <p>My name is Eloise and I’m a <strong>creative developer</strong> <br> inspired by <strong>the future</strong>. I’m 19 years old and am studying web development, design and marketing<br> at HETIC Paris.</p>
+                        <p>My name is Eloïse and I’m a <strong>creative developer</strong> <br> inspired by <strong>the future</strong>. I’m 19 years old and am studying web development, design and marketing<br> at HETIC Paris.</p>
                         <p class="check">Check out my recent work or <a href="#" class="pink">contact me.</a></p>
                     </div>
                 </div>
@@ -42,16 +42,17 @@
                     <div class="num">01</div>
                     <div class="flex">
                         <h2>Datajournalisme</h2>
+                        <p class="project-infos"><span class="project-grey">YEAR</span> > 2019 </p>
+                        <p class="project-infos"><span class="project-grey">ROLE</span> > Illustrator</p>
                         <div class="project-content">
                             <div class="project-left"></div>
-                            <p><span class="project-grey">YEAR</span> > 2019 </p>
-                            <p><span class="project-grey">ROLE</span> > Illustrator</p>
                             <p class="project-desc">
-                                Illustrations réalisées sur Adobe Illustrator dans le cadre d'un projet de datajournalisme sur les maladies chroniques. <br>
+                                Illustrations réalisées sur Adobe Illustrator dans le cadre d'un projet de datajournalisme sur les maladies chroniques. <br><br>
                                 <a href="https://www.behance.net/gallery/87377367/Illustrer-des-maladies-chroniques" class="discover">Discover</a> <br>
                             </p>
-                            
-                            <div class="project-arrow"></div>
+                            <div class="arrow-flex">
+                                <div class="arrow-head">▶</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -189,6 +190,7 @@ export default {
                 display: flex;  
                 flex-direction: column;
                 width: 80vw;
+                margin-bottom: 5vw;
 
                 .project-head
                 {
@@ -214,42 +216,51 @@ export default {
                         color: #e6e6e6;
                     }
 
+                    .project-infos
+                    {
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                        line-height: 2rem;
+                        .project-grey
+                        {
+                            font-weight: 700;
+                            color: #CCCCCC;
+                        }
+                    }
+
                     .project-content
                     {
                         position: absolute;
                         margin-top: 10vh;
-                        p
-                        {
-                            font-size: 1.2rem;
-                            font-weight: 300;
-                            line-height: 2rem;
-                            margin: 0 3vw;
-                            .project-grey
-                            {
-                                font-weight: 700;
-                                color: #CCCCCC;
-                            }
-                        }
                         .project-left
                         {
-                            width: 1px;
+                            width: 2px;
                             height: 100%;
-                            background-color: red;
-                            position: absolute
-                        }
-                        .project-arrow
-                        {
-                            width: 100%;
-                            height: 1px;
-                            background-color: red;
+                            background-color: #85ACF8;
                             position: absolute;
+                        }
+                        .arrow-flex
+                        {
+                            display: flex;
+                            width: 65%;
+                            height: 2px;
+                            background-color: #85ACF8;
+                            align-items: center;
+                            justify-content: flex-end;
+
+                            .arrow-head
+                            {
+                                color: #85ACF8;
+                                position: absolute;
+                                left: 64%
+                            }
                         }
                         .project-desc
                         {
                             width: 24vw;
-                            margin-bottom: 3vw;
-                            margin-top: 1vw;
-                            a
+                            padding: 0 0 3vw 3vw;
+                            
+                            .discover
                             {
                                 margin-top: 3vw;
                                 text-decoration: none;
