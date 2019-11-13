@@ -58,9 +58,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-img">
+                <a class="project-img" :href="project.discover" target="_blank">
+                    <div class="overlay"><span><i>{{project.name}}</i></span></div>
                     <img :src="project.img" alt="" class="project-img">
-                </div>
+                </a>
             </div>
             <div class="right"></div>
         </div>
@@ -186,6 +187,7 @@ export default {
             display: flex;
             border-top: 1px solid rgba(0, 0, 0, 0.151);
             width: 100%;
+            height: 100vh;
 
      
 
@@ -300,16 +302,47 @@ export default {
                     }
                 }
 
+
                 .project-img
                 {
-                    margin: 0 10rem;
+                    position: relative;
+                    height: 100%;
+
+                    .overlay
+                    {
+                        background-color: #00000000;
+                        transition: all .2s ease-out;
+                        position: absolute;
+                        width: 32vw;
+                        height: 24vw;
+                        z-index: 8;
+                        margin-left: 10vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ffffff00;
+                        font-family: 'Suzanna', serif;
+
+                        &:hover
+                        {      
+                            background-color: #000000b2;
+                            color: #ffffff;
+                        }
+
+                        span
+                        {
+                            opacity: 1;
+                            font-size: 2rem;
+                        }
+                    }
 
                     img
                     {
+                        position: absolute;
                         width: 32vw;
-                        position: relative;
+                        height: 24vw;
                         z-index: 5;
-                        transform: translateX(-15vw)
+                        margin-left: 10vw;
                     }
                 }
             }
