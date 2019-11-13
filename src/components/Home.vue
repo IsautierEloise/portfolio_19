@@ -7,11 +7,11 @@
         <div class="intro">
             <div class="left"></div>
             <div class="intro-wrap">
-                <h1>Hello</h1>
+                <h1>Bonjour</h1>
                 <div class="intro-flex">
                     <div class="intro-text">
-                        <p>My name is Eloïse and I’m a <strong>creative developer</strong> <br> inspired by <strong>the future</strong>. I’m 19 years old and am studying web development, design and marketing<br> at HETIC Paris.</p>
-                        <p class="check">Check out my recent work or <a href="#" class="pink">contact me.</a></p>
+                        <p>Je m'appelle Eloïse et je suis <strong>développeuse</strong> inspirée par <strong>le futur</strong>. <br>J'ai 19 ans et j'étudie le développement web, design UX et marketing digital à HETIC Paris.</p>
+                        <p class="check">Jetez un oeil à mes projets récents ou <a href="#" class="pink">contactez-moi.</a></p>
                     </div>
                 </div>
             </div>
@@ -42,13 +42,15 @@
                     <div class="num">{{ project.num }}</div>
                     <div class="project-flex">
                         <h2>{{ project.name }}</h2>
-                        <p class="project-infos"><span class="project-grey">YEAR</span> > {{ project.year }} </p>
-                        <p class="project-infos"><span class="project-grey">ROLE</span> > {{ project.role }}</p>
+                        <div class="project-info-block">
+                            <p class="project-infos"><span class="project-grey">YEAR > </span>{{ project.year }} </p>
+                            <p class="project-infos" :style="{color: project.role[1]}"><span class="project-grey">ROLE > </span>{{ project.role[0] }}</p>
+                        </div>
                         <div class="project-content">
                             <div class="project-left"></div>
                             <div class="project-desc">
                                 <p v-html="project.desc"></p>
-                                <a :href="project.discover" class="discover">Discover</a> <br>
+                                <a :href="project.discover" target="_blank" class="discover">Discover</a> <br>
                             </div>
                             <div class="arrow-flex">
                                 <div class="arrow-head">▶</div>
@@ -212,9 +214,9 @@ export default {
                     h2
                     {
                         text-transform: uppercase;
-                        font-weight:500;
+                        font-weight:800;
                         font-size: 2rem;
-                        color: #FFB03A;
+                        color: #4A4A4A;
                     }
 
                     .project-flex
@@ -229,15 +231,21 @@ export default {
                         color: #e6e6e6;
                     }
 
-                    .project-infos
+                    .project-info-block
                     {
-                        font-size: 1.2rem;
-                        font-weight: 300;
-                        line-height: 2rem;
-                        .project-grey
+                        margin-top: 2rem;
+                        margin-bottom: -1rem;
+                        
+                        .project-infos
                         {
-                            font-weight: 700;
-                            color: #CCCCCC;
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                            line-height: 2rem;
+                            .project-grey
+                            {
+                                font-weight: 700;
+                                color: #CCCCCC;
+                            }
                         }
                     }
 
@@ -277,10 +285,16 @@ export default {
                             {
                                 margin-top: 3vw;
                                 text-decoration: none;
-                                color: #383838;
+                                color: #85ACF8;
                                 font-weight: 600;
                                 font-size: 1.2rem;
-                                text-transform: uppercase
+                                text-transform: uppercase;
+                                transition: color .2s ease-out;
+
+                                &:hover
+                                {
+                                    color: #4b6aa8;
+                                }
                             }
                         }
                     }
