@@ -7,13 +7,15 @@
         </div>
         <div class="menu">
             <div class="links">
-                <a href="/">My work <small>/></small></a>
-                <a  href="/about">About <small>/></small></a>
+                <router-link to="/">My work <small>/></small></router-link>
+                <router-link to="/about">About <small>/></small></router-link>
                 <a href="">Contact <small>/></small></a>
             </div>
         </div>
         <div class="right-case"></div>
+
     </div>
+    
 </template>
 
 <script>
