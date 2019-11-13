@@ -81,7 +81,7 @@ export default {
     {
         getHeight()
         {
-            this.windowHeight = document.documentElement.scrollHeight - (0.06 * document.documentElement.clientWidth);
+            this.windowHeight = document.documentElement.scrollHeight - (0.3 * document.documentElement.clientWidth);
         }
         
     },
@@ -242,6 +242,7 @@ export default {
                         font-family: 'Suranna', serif;
                         font-size: 4rem;
                         color: #e6e6e6;
+                        margin-left: -1vw
                     }
 
                     .project-info-block
