@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <Header/>
-    <Home/>
+    <router-link/>
   </div>
 </template>
 
 <script>
-import Header from './components/partials/Header.vue'
-import Home from './components/Home.vue'
+// import Home from './components/Home.vue'
+// import About from './components/About.vue'
 
 export default {
   name: 'app',
-  components: {
-    Header,
-    Home,
-  }
+  // components: {
+  //   Header,
+  //   Home,
+  //   About
+  // },
 }
 </script>
 

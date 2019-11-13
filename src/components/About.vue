@@ -7,7 +7,7 @@
         <div class="intro">
             <div class="left"></div>
             <div class="intro-wrap">
-                <h1>Bonjour</h1>
+                <h1>ABOUUUT</h1>
                 <div class="intro-flex">
                     <div class="intro-text">
                         <p>Je m'appelle Eloïse et je suis <strong>développeuse</strong> inspirée par <strong>le futur</strong>. <br>J'ai 19 ans et j'étudie le développement web, design UX et marketing digital à HETIC Paris.</p>
@@ -72,7 +72,7 @@
 export default {
     data()
     {
-        return {title: 'Home'}
+        return {title: 'About'}
     },
 }
 </script>

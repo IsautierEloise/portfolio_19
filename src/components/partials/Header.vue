@@ -7,8 +7,8 @@
         </div>
         <div class="menu">
             <div class="links">
-                <a href="">My work <small>/></small></a>
-                <a href="">About <small>/></small></a>
+                <a href="/">My work <small>/></small></a>
+                <a  href="/about">About <small>/></small></a>
                 <a href="">Contact <small>/></small></a>
             </div>
         </div>
@@ -49,7 +49,7 @@ export default {
         .menu
         {
             
-            width: 86vw;
+            width: 80vw;
             font-size: 1.1rem;
 
             .links
@@ -60,6 +60,7 @@ export default {
                 justify-content: space-evenly;
                 align-items: center;
                 float: right;
+                font-weight: 800;
                 padding: 0 3rem;
                 a
                 {
