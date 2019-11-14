@@ -198,7 +198,7 @@ export default {
             display: flex;
             border-top: 1px solid rgba(0, 0, 0, 0.151);
             width: 100%;
-            height: 100vh;
+            height: 80vh;
 
      
 

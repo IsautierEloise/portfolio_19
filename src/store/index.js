@@ -38,7 +38,7 @@ export default new Vuex.Store({
         'name' : 'Vue Datepicker',
         'year' : '2019',
         'role': ['Développeuse', '#F8A6C8'],
-        'img' : 'https://via.placeholder.com/1200x1000',
+        'img' : '@/assets/img/datepicker.jpg',
         'desc' : 'Programmation d\'un sélecteur de dates et heures adapté à l\'Outil CSE et flexible. Mise en ligne en tant que libraire NPM. <strong>Vue.js</strong><br><br>',
         'discover' : 'https://www.npmjs.com/package/vue-datetime-picker-component',
       },
