@@ -81,7 +81,7 @@ export default {
     {
         getHeight()
         {
-            this.windowHeight = document.documentElement.scrollHeight - (0.3 * document.documentElement.clientWidth);
+            this.windowHeight = document.documentElement.scrollHeight - (0.21 * document.documentElement.clientWidth);
         }
         
     },
@@ -326,7 +326,7 @@ export default {
                         transition: all .2s ease-out;
                         position: absolute;
                         width: 32vw;
-                        height: 24vw;
+                        height: 17vw;
                         z-index: 8;
                         margin-left: 13vw;
                         display: flex;
@@ -352,7 +352,7 @@ export default {
                     {
                         position: absolute;
                         width: 32vw;
-                        height: 24vw;
+                        height: 17vw;
                         z-index: 5;
                         margin-left: 13vw;
                     }
