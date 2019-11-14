@@ -7,9 +7,9 @@
         </div>
         <div class="menu">
             <div class="links">
-                <router-link to="/">My work <small>/></small></router-link>
-                <router-link to="/about">About <small>/></small></router-link>
-                <a href="">Contact <small>/></small></a>
+                <router-link to="/" class="work">My work <small>/></small></router-link>
+                <router-link to="/about" class="about">About <small>/></small></router-link>
+                <router-link to="/contact" class="contact">Contact <small>/></small></router-link>
             </div>
         </div>
         <div class="right-case"></div>
@@ -68,6 +68,24 @@ export default {
                 {
                     text-decoration: none;
                     color: #4A4A4A;
+                }
+                .work, .about, .contact
+                {       
+                    transition: all .2s ease-in-out;
+                }
+                .work:hover
+                {
+                    color: #85ACF8
+                }
+
+                .about:hover
+                {
+                    color: #FFB03A
+                }
+
+                .contact:hover
+                {
+                    color: #F8A6C8
                 }
             }
         }

@@ -43,8 +43,8 @@
                     <div class="project-flex">
                         <h2>{{ project.name }}</h2>
                         <div class="project-info-block">
-                            <p class="project-infos"><span class="project-grey">YEAR > </span>{{ project.year }} </p>
-                            <p class="project-infos" :style="{color: project.role[1]}"><span class="project-grey">ROLE > </span>{{ project.role[0] }}</p>
+                            <p class="project-infos"><span class="project-grey">YEAR : </span>{{ project.year }} </p>
+                            <p class="project-infos" :style="{color: project.role[1]}"><span class="project-grey">ROLE : </span>{{ project.role[0] }}</p>
                         </div>
                         <div class="project-content">
                             <div class="project-left"></div>
@@ -199,9 +199,6 @@ export default {
             border-top: 1px solid rgba(0, 0, 0, 0.151);
             width: 100%;
             height: 80vh;
-
-     
-
             .left
             {
                 width: 10vw;
@@ -227,9 +224,9 @@ export default {
                     h2
                     {
                         text-transform: uppercase;
-                        font-weight:800;
-                        font-size: 2rem;
-                        color: #4A4A4A;
+                        font-weight:700;
+                        font-size: 1.8rem;
+                        color: #85ACF8
                     }
 
                     .project-flex
@@ -257,8 +254,8 @@ export default {
                             line-height: 2rem;
                             .project-grey
                             {
-                                font-weight: 700;
-                                color: #CCCCCC;
+                                font-weight: 400;
+                                color: #636363;
                             }
                         }
                     }
@@ -294,6 +291,7 @@ export default {
                         {
                             width: 24vw;
                             padding: 0 0 3vw 3vw;
+                            color: #525252;
                             
                             .discover
                             {
@@ -325,6 +323,7 @@ export default {
                         background-color: #00000000;
                         transition: all .2s ease-out;
                         position: absolute;
+                        top: -7vh;
                         width: 32vw;
                         height: 17vw;
                         z-index: 8;
@@ -355,6 +354,7 @@ export default {
                         height: 17vw;
                         z-index: 5;
                         margin-left: 13vw;
+                        top: -7vh;
                     }
                 }
             }
