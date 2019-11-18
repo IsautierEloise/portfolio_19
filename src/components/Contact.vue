@@ -7,11 +7,13 @@
         <div class="intro">
             <div class="left"></div>
             <div class="intro-wrap">
-                <h1>À propos de moi</h1>
+                <h1>Contact</h1>
                 <div class="intro-flex">
                     <div class="intro-text">
-                        <p>Je recherche un stage de <strong>6 mois</strong> commencant en <strong>mars 2020</strong> et se terminant en <strong>Juin 2020</strong>. <br> N'hésitez pas à me contacter !</p>
-                        <img src="@/assets/img/me.jpg" alt="">
+                        <div>
+                            <p>Mail > <a href="mailto:eloise.isautier@hetic.net">eloise.isautier@hetic.net</a></p>
+                            <p>Téléphone > <a href="tel:+330769544007">0769544007</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -42,7 +44,7 @@
 export default {
     data()
     {
-        return {title: 'About'}
+        return {title: 'Contact'}
     },
 }
 </script>
@@ -63,7 +65,7 @@ export default {
         .scrollbar
         {
             width: 1.5px;
-            height: calc(90% - 21vw);
+            height: 30%;
             background-color: #e6e6e6;
             position: absolute;
             z-index: -1;
@@ -100,7 +102,7 @@ export default {
                 h1
                 {
                     font-size: 3rem;
-                    color: #FFB03A;
+                    color: #F8A6C8;
                     padding: 5vw 0 0 8vw;
                 }  
 
@@ -124,10 +126,12 @@ export default {
                             color: #4A4A4A;
                             font-size: 1.25rem;    
                             font-weight: 300;
-                        }
-                        img
-                        {
-                            width: 20vw;
+
+                            a
+                            {
+                                color: #F8A6C8;
+                                text-decoration: none;
+                            }
                         }
                         .check
                         {

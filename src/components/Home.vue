@@ -10,8 +10,8 @@
                 <h1>Bonjour</h1>
                 <div class="intro-flex">
                     <div class="intro-text">
-                        <p>Je m'appelle Eloïse et je suis <strong>développeuse</strong> inspirée par <strong>le futur</strong>. <br>J'ai 19 ans et j'étudie le développement web, design UX et marketing digital à HETIC Paris.</p>
-                        <p class="check">Jetez un oeil à mes projets récents ou <a href="#" class="pink">contactez-moi.</a></p>
+                        <p>Je m'appelle Eloïse et je suis une <strong>développeuse web</strong> créative. <br>J'ai 19 ans et j'étudie le développement web, design UX et marketing digital à HETIC Paris.</p>
+                        <p class="check">Jetez un oeil à mes récents projets ou <router-link to="/contact" class="pink">contactez-moi.</router-link></p>
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@ export default {
                 h1
                 {
                     font-size: 3rem;
-                    color: #4A4A4A;
+                    color: #85ACF8;
                     padding: 5vw 0 0 8vw;
                 }  
 
@@ -239,7 +239,8 @@ export default {
                         font-family: 'Suranna', serif;
                         font-size: 4rem;
                         color: #e6e6e6;
-                        margin-left: -1vw
+                        margin-left: -1vw;
+                        user-select: none;
                     }
 
                     .project-info-block
@@ -279,6 +280,7 @@ export default {
                             background-color: #85ACF8;
                             align-items: center;
                             justify-content: flex-end;
+                            user-select: none;
 
                             .arrow-head
                             {

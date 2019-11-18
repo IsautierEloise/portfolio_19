@@ -8,7 +8,7 @@
         <div class="menu">
             <div class="links">
                 <router-link to="/" class="work">My work <small>/></small></router-link>
-                <router-link to="/about" class="about">About <small>/></small></router-link>
+                <router-link to="/about" class="about">À propos <small>/></small></router-link>
                 <router-link to="/contact" class="contact">Contact <small>/></small></router-link>
             </div>
         </div>
@@ -64,6 +64,7 @@ export default {
                 float: right;
                 font-weight: 800;
                 padding: 0 3rem;
+                user-select: none;
                 a
                 {
                     text-decoration: none;
@@ -73,19 +74,40 @@ export default {
                 {       
                     transition: all .2s ease-in-out;
                 }
-                .work:hover
+                .work
                 {
-                    color: #85ACF8
+                    &.router-link-exact-active
+                    {
+                        color: #85ACF8;
+                    }
+                    &:hover
+                    {
+                        color: #85ACF8
+                    }
                 }
 
-                .about:hover
+                .about
                 {
-                    color: #FFB03A
+                    &.router-link-exact-active
+                    {
+                        color: #FFB03A;
+                    }
+                    &:hover
+                    {
+                        color: #FFB03A
+                    }
                 }
 
-                .contact:hover
+                .contact
                 {
-                    color: #F8A6C8
+                    &.router-link-exact-active
+                    {
+                        color: #F8A6C8;
+                    }
+                    &:hover
+                    {
+                        color: #F8A6C8
+                    }
                 }
             }
         }
