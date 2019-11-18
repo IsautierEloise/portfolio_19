@@ -1,7 +1,7 @@
 <template>
     <div class="wrap">
         <div class="topbar"></div>
-        <div class="scrollbar" :style="{ height: (windowHeight + 'px') }">
+        <div class="scrollbar">
             <span class="scroll">scroll</span>
         </div>
         <div class="intro">
@@ -79,15 +79,11 @@ export default {
     },
     methods : 
     {
-        getHeight()
-        {
-            this.windowHeight = document.documentElement.scrollHeight - (0.21 * document.documentElement.clientWidth);
-        }
+
         
     },
     mounted()
     { 
-        this.getHeight();
     }
 }
 </script>
@@ -113,6 +109,7 @@ export default {
             z-index: -1;
             top: 21vw;
             left: 19.35vw;
+            height: calc(6 * 100%);
 
             .scroll
             {

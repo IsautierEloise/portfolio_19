@@ -7,9 +7,9 @@
         </div>
         <div class="menu">
             <div class="links">
-                <router-link to="/" class="work">My work <small>/></small></router-link>
-                <router-link to="/about" class="about">À propos <small>/></small></router-link>
-                <router-link to="/contact" class="contact">Contact <small>/></small></router-link>
+                <router-link to="/" class="work" @click.native="scrollToTop">My work <small>/></small></router-link>
+                <router-link to="/about" class="about" @click.native="scrollToTop">À propos <small>/></small></router-link>
+                <router-link to="/contact" class="contact" @click.native="scrollToTop">Contact <small>/></small></router-link>
             </div>
         </div>
         <div class="right-case"></div>
@@ -20,7 +20,12 @@
 
 <script>
 export default {
-    
+    methods:
+    {
+        scrollToTop() {
+            window.scrollTo(0,0);
+        }
+    }
 }
 </script>
 
