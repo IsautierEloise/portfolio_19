@@ -100,6 +100,15 @@ export default {
             margin-left: .5rem;
             top: 21vw;
             left: 17.5vw;
+
+            @media screen and (max-width: 900px)
+            {    
+                top: 25vw;
+            }
+            @media screen and (min-height: 1300px)
+            {
+                top: 52vw;
+            }
         }
         .scrollbar
         {
@@ -110,6 +119,17 @@ export default {
             top: 21vw;
             left: 19.35vw;
             height: calc(6 * 100%);
+
+            @media screen and (max-width: 900px)
+            {    
+                top: 25vw;
+            }
+
+            @media screen and (min-height: 1300px)
+            { 
+                height: calc(3.2 * 100%);
+                top: 52vw;
+            }
 
             .scroll
             {
@@ -129,6 +149,11 @@ export default {
             height: 100%;   
             padding-top: 10vw;
             width: 100%;
+            
+            @media screen and (max-width: 900px)
+            {
+                flex-direction: column;
+            }
 
             .left
             {
@@ -139,11 +164,34 @@ export default {
             .intro-wrap
             {
                 width: 80vw;
+                height: 81vh;
+                
+                @media screen and (min-height: 1300px)
+                {
+                    height: calc(100vh - 20vw);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                
+                @media screen and (max-width: 900px)
+                {
+                    height: calc(100vh - 20vw);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
                 h1
                 {
                     font-size: 3rem;
                     color: #85ACF8;
                     padding: 5vw 0 0 8vw;
+                    
+                    @media screen and (max-width: 900px)
+                    {
+                        font-size: 2rem;
+                    }
                 }  
 
                 .intro-flex
@@ -196,6 +244,11 @@ export default {
             border-top: 1px solid rgba(0, 0, 0, 0.151);
             width: 100%;
             height: 80vh;
+
+            @media screen and (min-height: 1300px)
+            {
+                height: 43vh
+            }
             .left
             {
                 width: 10vw;
@@ -223,7 +276,12 @@ export default {
                         text-transform: uppercase;
                         font-weight:700;
                         font-size: 1.8rem;
-                        color: #85ACF8
+                        color: #85ACF8;
+
+                        @media screen and (max-width: 900px)
+                        {
+                            font-size: 1.2rem;
+                        }
                     }
 
                     .project-flex

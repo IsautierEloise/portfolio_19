@@ -59,6 +59,10 @@ export default {
             margin-left: .5rem;
             top: 21vw;
             left: 17.5vw;
+            @media screen and (min-height: 1300px)
+            {
+                top: 50vw;
+            }
         }
         .scrollbar
         {
@@ -69,6 +73,16 @@ export default {
             z-index: -1;
             top: 21vw;
             left: 19.35vw;
+            
+            @media screen and (min-width: 1300px)
+            { 
+                height: calc(60% - 21vw);
+            }
+            @media screen and (min-height: 1300px)
+            {
+                top: 50vw;
+                height: 40%;
+            }
 
             .scroll
             {
@@ -87,6 +101,11 @@ export default {
             display: flex;
             padding-top: 10vw;
             width: 100%;
+            
+            @media screen and (max-width: 900px)
+            {
+                flex-direction: column;
+            }
 
             .left
             {
@@ -97,11 +116,34 @@ export default {
             .intro-wrap
             {
                 width: 80vw;
+                height: 81vh;
+                
+                @media screen and (min-height: 1300px)
+                {
+                    height: calc(100vh - 20vw);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                @media screen and (max-width: 900px)
+                {
+                    height: calc(100vh - 20vw);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
                 h1
                 {
                     font-size: 3rem;
                     color: #FFB03A;
                     padding: 5vw 0 0 8vw;
+                    
+                    @media screen and (max-width: 900px)
+                    {
+                        font-size: 2rem;
+                    }
                 }  
 
                 .intro-flex

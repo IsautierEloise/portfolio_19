@@ -70,6 +70,11 @@ export default {
                 font-weight: 800;
                 padding: 0 3rem;
                 user-select: none;
+                
+                @media screen and (max-width: 900px)
+                {
+                    display:none;
+                }
                 a
                 {
                     text-decoration: none;
