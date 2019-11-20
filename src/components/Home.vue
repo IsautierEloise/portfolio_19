@@ -91,6 +91,12 @@ export default {
 <style lang="scss" scoped>
     .wrap
     {
+        @media screen and(max-width: 900px)
+        {
+            overflow-x: hidden;
+            max-width: 100%;
+            width: 100%;
+        }
         .topbar
         {
             width: 2rem;
@@ -181,6 +187,7 @@ export default {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    overflow-x: hidden;
                 }
 
                 h1

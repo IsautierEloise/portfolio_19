@@ -10,7 +10,7 @@
                 <h1>À propos de moi</h1>
                 <div class="intro-flex">
                     <div class="intro-text">
-                        <p>Je recherche un stage de <strong>6 mois</strong> commencant en <strong>mars 2020</strong> et se terminant en <strong>Juin 2020</strong>. <br> N'hésitez pas à me contacter !</p>
+                        <p>Je recherche un stage de <strong>5 mois</strong> commencant en <strong>mars 2020</strong> et se terminant en <strong>Juillet 2020</strong>. <br> N'hésitez pas à me contacter !</p>
                         <img src="@/assets/img/me.jpg" alt="">
                     </div>
                 </div>
@@ -111,11 +111,32 @@ export default {
             display: flex;
             padding-top: 10vw;
             width: 100%;
-            
-            @media screen and (max-width: 900px)
+
+            @media screen and (max-width: 350px)
             {
                 flex-direction: column;
+                padding-top: 16vh;
             }
+
+            @media screen and (min-width: 350px) and (max-width: 500px)
+            {
+                flex-direction: column;
+                padding-top: 12vh;
+            }
+
+            @media screen and (max-width: 420px) and (min-height: 800px)
+            {
+                flex-direction: column;
+                padding-top: 6vh;
+
+            }
+
+            @media screen and (min-width: 500px) and (max-width: 900px)
+            {
+                flex-direction: column;
+                padding-top: 24vh;
+            }
+
 
             .left
             {
@@ -163,10 +184,11 @@ export default {
                     padding-bottom: 5vw;
                     display: flex;    
                     width: 100%;
+                    justify-content: center;
                    
                     .intro-text
                     {
-                        padding: 5vw 15vw; 
+                        padding: 5vw 13vw; 
                         display: flex;
                         flex-direction: row;
                         align-items: flex-start;
@@ -177,6 +199,8 @@ export default {
                             flex-direction: column-reverse;
                             align-items: center;
                             justify-content: center;
+                            padding: 0;
+                            text-align: center;
                         }
                         p
                         {
@@ -219,6 +243,15 @@ export default {
                 justify-content: space-evenly;
                 width: 10vw;     
                 border-left: 1px solid rgba(0, 0, 0, 0.151);
+
+                @media screen and (max-width: 900px)
+                {
+                    flex-direction: row;
+                    width: 100%;
+                    border: none;
+                    margin: 12vw 0;
+                }
+                
             }
         }
     }

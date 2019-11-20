@@ -168,6 +168,7 @@ export default {
                         flex-direction: row;
                         align-items: flex-start;
                         justify-content: space-between;
+                        
                         p
                         {
                             line-height: 180%;

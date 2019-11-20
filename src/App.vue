@@ -37,6 +37,7 @@ export default {
   font-family: 'Raleway', sans-serif, 'Suranna', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
   p::selection,span::selection,img::selection,strong::selection,br::selection, small::selection, div::selection, a::selection, i::selection
   {
     background-color: #FFB03A;

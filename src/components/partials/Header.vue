@@ -159,6 +159,7 @@ export default {
             .burger-menu
             {
                 display: none;
+                position: relative;
                 
                 @media screen and (max-width: 900px)
                 {
@@ -175,6 +176,15 @@ export default {
                     
                     -webkit-user-select: none;
                     user-select: none;
+
+                    @media screen and (max-width: 900px)
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
 
                     input
                     {
@@ -197,6 +207,7 @@ export default {
                         opacity: 1;
                         transform: rotate(45deg);
                         background: #232323;
+                        position: absolute;
 
                         &:nth-last-child(3)
                         {
@@ -206,34 +217,21 @@ export default {
 
                         &:nth-last-child(2)
                         {
-                            transform: rotate(-45deg) translate(0, 2px);
+                            transform: rotate(-45deg);
                         }
                     }
 
                     span
                     {
                         display: block;
-                        width: 60%;
+                        width: 2.5rem;
                         height: 2px;
-                        margin: 7px auto;
-                        margin-bottom: 5px;
+                        margin: 1vw 0;
                         background: black;
                         border-radius: 3px;
                         z-index: 1;
-                        transform-origin: 4px 0px;
                         transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
                         position: relative;
-                        top: 4vw;
-
-                        &:first-child
-                        {
-                            transform-origin: 0% 0%;
-                        }
-                        
-                        &:nth-last-child(2)
-                        {
-                            transform-origin: 0% 100%;
-                        }
                     }
                 }
                 .hidden-menu
