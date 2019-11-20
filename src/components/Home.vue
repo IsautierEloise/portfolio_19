@@ -123,6 +123,7 @@ export default {
             @media screen and (max-width: 900px)
             {    
                 top: 25vw;
+                display: none
             }
 
             @media screen and (min-height: 1300px)

@@ -63,6 +63,11 @@ export default {
             {
                 top: 50vw;
             }
+            
+            @media screen and (max-width: 900px)
+            {
+                display: none;
+            }
         }
         .scrollbar
         {
@@ -82,6 +87,11 @@ export default {
             {
                 top: 50vw;
                 height: 40%;
+            }
+            
+            @media screen and (max-width: 900px)
+            {
+                display: none;
             }
 
             .scroll
@@ -132,6 +142,7 @@ export default {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    width: 100%;
                 }
 
                 h1
@@ -160,6 +171,13 @@ export default {
                         flex-direction: row;
                         align-items: flex-start;
                         justify-content: space-between;
+                        
+                        @media screen and (max-width: 900px)
+                        {   
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            justify-content: center;
+                        }
                         p
                         {
                             line-height: 180%;
@@ -170,6 +188,11 @@ export default {
                         img
                         {
                             width: 20vw;
+                            @media screen and (max-width: 900px)
+                            {
+                                width: 80vw;
+                                margin-bottom: 10vw;
+                            }
                         }
                         .check
                         {
