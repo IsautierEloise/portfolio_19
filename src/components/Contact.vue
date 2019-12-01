@@ -136,16 +136,22 @@ export default {
 
                 @media screen and (max-width: 900px)
                 {
-                    height: calc(100vh - 20vw);
+                    height: calc(100vh - 48vw);
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                 }
 
+                
+                @media screen and (max-width: 700px)
+                {
+                    height: calc(100vh - 53vw);
+                }
+
                 h1
                 {
                     font-size: 3rem;
-                    color: #F8A6C8;
+                    color: #FFB444;
                     padding: 5vw 0 0 8vw;
                     
                     @media screen and (max-width: 900px)
@@ -178,7 +184,7 @@ export default {
 
                             a
                             {
-                                color: #F8A6C8;
+                                color: #FFB444;
                                 text-decoration: none;
                             }
                         }
@@ -187,7 +193,7 @@ export default {
                             margin-top: 1rem;
                             .pink
                             {
-                                color: #F8A6C8;
+                                color: #FFB444;
                                 text-decoration: none;
 
                                 &:hover
@@ -207,6 +213,14 @@ export default {
                 justify-content: space-evenly;
                 width: 10vw;     
                 border-left: 1px solid rgba(0, 0, 0, 0.151);
+                
+                @media screen and (max-width: 900px)
+                {
+                    flex-direction: row;
+                    width: 100%;
+                    border: none;
+                    margin: 12vw 0;
+                }
             }
         }
     }

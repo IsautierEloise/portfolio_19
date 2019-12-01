@@ -169,7 +169,7 @@ export default {
                 h1
                 {
                     font-size: 3rem;
-                    color: #FFB03A;
+                    color: #FFA6B6;
                     padding: 5vw 0 0 8vw;
                     
                     @media screen and (max-width: 900px)
@@ -191,7 +191,7 @@ export default {
                         padding: 5vw 13vw; 
                         display: flex;
                         flex-direction: row;
-                        align-items: flex-start;
+                        align-items: center;
                         justify-content: space-between;
                         
                         @media screen and (max-width: 900px)
@@ -211,7 +211,7 @@ export default {
                         }
                         img
                         {
-                            width: 20vw;
+                            width: 15vw;
                             @media screen and (max-width: 900px)
                             {
                                 width: 80vw;
@@ -223,7 +223,7 @@ export default {
                             margin-top: 1rem;
                             .pink
                             {
-                                color: #F8A6C8;
+                                color: #FFB444;
                                 text-decoration: none;
 
                                 &:hover

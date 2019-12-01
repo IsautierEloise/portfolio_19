@@ -40,12 +40,12 @@ export default {
   
   p::selection,span::selection,img::selection,strong::selection,br::selection, small::selection, div::selection, a::selection, i::selection
   {
-    background-color: #FFB03A;
+    background-color: #FFA6B6;
     color: white;
   }
   h1::selection, h2::selection, h3::selection
   {
-    background-color: #FFB03A;
+    background-color: #FFA6B6;
     color: white;
   }
 }

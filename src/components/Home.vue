@@ -7,10 +7,10 @@
         <div class="intro">
             <div class="left"></div>
             <div class="intro-wrap">
-                <h1>Bonjour</h1>
+                <h1>Bonjour !</h1>
                 <div class="intro-flex">
                     <div class="intro-text">
-                        <p>Je m'appelle Eloïse et je suis une <strong>développeuse web</strong> créative. <br>J'ai 19 ans et j'étudie le développement web, design UX et marketing digital à HETIC Paris.</p>
+                        <p>Je m'appelle <strong>Eloïse</strong> et je suis une <strong>développeuse web</strong> front-end créative. <br>J'ai 19 ans et j'étudie le développement web, design UX et marketing digital à HETIC Paris.</p>
                         <p class="check">Jetez un oeil à mes récents projets ou <router-link to="/contact" class="pink">contactez-moi.</router-link></p>
                     </div>
                 </div>
@@ -91,9 +91,10 @@ export default {
 <style lang="scss" scoped>
     .wrap
     {
+
         @media screen and(max-width: 900px)
         {
-            overflow-x: hidden;
+            overflow: hidden;
             max-width: 100%;
             width: 100%;
         }
@@ -109,7 +110,7 @@ export default {
 
             @media screen and (max-width: 900px)
             {    
-                top: 25vw;
+                display: none;
             }
             @media screen and (min-height: 1300px)
             {
@@ -128,7 +129,6 @@ export default {
 
             @media screen and (max-width: 900px)
             {    
-                top: 25vw;
                 display: none
             }
 
@@ -160,12 +160,14 @@ export default {
             @media screen and (max-width: 900px)
             {
                 flex-direction: column;
+                padding-top: 20vw;
             }
 
             .left
             {
                 width: 10vw;
                 border-right: 1px solid rgba(0, 0, 0, 0.151);
+                
             }
 
             .intro-wrap
@@ -183,7 +185,8 @@ export default {
                 
                 @media screen and (max-width: 900px)
                 {
-                    height: calc(100vh - 20vw);
+                    height: calc(100vh - 41vw);
+                    width: 100vw;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -193,7 +196,6 @@ export default {
                 h1
                 {
                     font-size: 3rem;
-                    color: #85ACF8;
                     padding: 5vw 0 0 8vw;
                     
                     @media screen and (max-width: 900px)
@@ -208,6 +210,7 @@ export default {
                     padding-bottom: 5vw;
                     display: flex;    
                     width: 100%;
+                    overflow-y: hidden;
                    
                     .intro-text
                     {
@@ -224,7 +227,7 @@ export default {
                             margin-top: 1rem;
                             .pink
                             {
-                                color: #F8A6C8;
+                                color: #FFA6B6;
                                 text-decoration: none;
 
                                 &:hover
@@ -244,6 +247,14 @@ export default {
                 justify-content: space-evenly;
                 width: 10vw;     
                 border-left: 1px solid rgba(0, 0, 0, 0.151);
+                
+                @media screen and (max-width: 900px)
+                {
+                    flex-direction: row;
+                    width: 100%;
+                    border: none;
+                    margin: 12vw 0;
+                }
             }
         }
         .project
@@ -261,6 +272,12 @@ export default {
             {
                 width: 10vw;
                 border-right: 1px solid rgba(0, 0, 0, 0.151);
+                
+                @media screen and (max-width: 900px)
+                {
+                    display: none;
+                }
+
             }
             .center
             {      
@@ -271,6 +288,15 @@ export default {
                 margin-bottom: 5vw;
                 position: relative;
 
+                
+                @media screen and (max-width: 900px)
+                {
+                    flex-direction: row;
+                    width: 100vw;
+                    padding-top: 0px;
+                }
+
+
                 .project-head
                 {
                     display: flex;
@@ -279,16 +305,24 @@ export default {
                     align-items: baseline;
                     margin: 0 3vw;
 
+                             
+                    @media screen and (max-width: 900px)
+                    {
+                        width: 100%;
+                    }
+
                     h2
                     {
                         text-transform: uppercase;
                         font-weight:700;
                         font-size: 1.8rem;
-                        color: #85ACF8;
+                        color: #FFA6B6;
+                        margin-bottom: -1vw;
 
                         @media screen and (max-width: 900px)
                         {
-                            font-size: 1.2rem;
+                            padding-top: 2rem;
+
                         }
                     }
 
@@ -296,6 +330,14 @@ export default {
                     {
                         position: absolute;
                         left: 48vw;
+                                
+                        @media screen and (max-width: 900px)
+                        {
+                            position: absolute;
+                            left: 20%;
+                            width: 68%;
+                        }
+
                     }
                     .num
                     {    
@@ -304,6 +346,12 @@ export default {
                         color: #e6e6e6;
                         margin-left: -1vw;
                         user-select: none;
+
+                        @media screen and (max-width: 900px)
+                        {
+                            font-size: 3rem;   
+                            margin-left: 0px; 
+                        }
                     }
 
                     .project-info-block
@@ -332,7 +380,7 @@ export default {
                         {
                             width: 2px;
                             height: 100%;
-                            background-color: #85ACF8;
+                            background-color: #FFA6B6;
                             position: absolute;
                         }
                         .arrow-flex
@@ -340,14 +388,14 @@ export default {
                             display: flex;
                             width: 65%;
                             height: 2px;
-                            background-color: #85ACF8;
+                            background-color: #FFA6B6;
                             align-items: center;
                             justify-content: flex-end;
                             user-select: none;
 
                             .arrow-head
                             {
-                                color: #85ACF8;
+                                color: #FFA6B6;
                                 position: absolute;
                                 left: 64%
                             }
@@ -357,12 +405,17 @@ export default {
                             width: 24vw;
                             padding: 0 0 3vw 3vw;
                             color: #525252;
+
+                            @media screen and (max-width: 900px)
+                            {
+                                width: 100%;
+                            }
                             
                             .discover
                             {
                                 margin-top: 3vw;
                                 text-decoration: none;
-                                color: #85ACF8;
+                                color: #FFA6B6;
                                 font-weight: 600;
                                 font-size: 1.2rem;
                                 text-transform: uppercase;
@@ -370,7 +423,7 @@ export default {
 
                                 &:hover
                                 {
-                                    color: #4b6aa8;
+                                    color: #da8392;
                                 }
                             }
                         }
@@ -420,6 +473,11 @@ export default {
                         z-index: 5;
                         margin-left: 13vw;
                         top: -7vh;
+
+                        @media screen and (max-width: 900px)
+                        {
+                            display: none;
+                        }
                     }
                 }
             }
@@ -427,6 +485,11 @@ export default {
             {       
                 width: 10vw;
                 border-left: 1px solid rgba(0, 0, 0, 0.151);
+
+                @media screen and (max-width: 900px)
+                {
+                    display: none;
+                }
             }
         }
     }
