@@ -190,7 +190,7 @@ export default {
                 
                 @media screen and (max-width: 900px)
                 {
-                    height: calc(100vh - 41vw);
+                    height: 90%;
                     width: 100vw;
                     display: flex;
                     flex-direction: column;
