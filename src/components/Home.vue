@@ -53,7 +53,12 @@
                                 <a :href="project.discover" target="_blank" class="discover">Discover</a> <br>
                             </div>
                             <div class="arrow-flex">
-                                <div class="arrow-head">▶</div>
+                                <div class="arrow-head">
+                                    <svg  version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="460.5" height="531.74"
+                                        viewBox="0 0 460.5 531.74" overflow="visible" enable-background="new 0 0 460.5 531.74" xml:space="preserve">
+                                        <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "/>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -395,9 +400,14 @@ export default {
 
                             .arrow-head
                             {
-                                color: #FFA6B6;
+                                fill: #FFA6B6;
                                 position: absolute;
-                                left: 64%
+                                left: 64%;
+                                margin-top: .1rem;
+                                svg
+                                {
+                                    width: .75rem;
+                                }
                             }
                         }
                         .project-desc
